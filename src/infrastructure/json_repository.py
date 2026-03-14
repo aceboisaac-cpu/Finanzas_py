@@ -3,8 +3,8 @@ import os
 from typing import List
 from datetime import datetime
 from uuid import UUID
-from domain.transaction import Transaction, TransactionType
-from application.repositories import TransactionRepository
+from src.domain.transaction import Transaction, TransactionType
+from src.application.repositories import TransactionRepository
 
 class JSONTransactionRepository(TransactionRepository):
     def __init__(self, file_path: str):
